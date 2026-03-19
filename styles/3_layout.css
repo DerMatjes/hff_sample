@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.format-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 105px;
+  justify-items: center;
+}
+
+.nav_item {
+  border:none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-size: 1.8rem;
+  height: 75px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.content_item {
+  width: 90%;
+  padding: 50px;
+  border-radius: 8px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  background-color: blue;
+}
+
+.footer_item {
+  width: 100%;
+  height: 400px;
+  font-size: 1.8rem;
+  overflow : hidden;
+  border: none;
+  margin: 0;
+  background-color: red;
+}
