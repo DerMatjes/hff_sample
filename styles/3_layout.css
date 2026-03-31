@@ -25,9 +25,7 @@ body {
   width: 90%;
   padding: 50px;
   border-radius: 8px;
-  border-radius: 8px;
   font-size: 1.8rem;
-  background-color: blue;
 }
 
 .footer_item {
@@ -37,5 +35,4 @@ body {
   overflow : hidden;
   border: none;
   margin: 0;
-  background-color: red;
 }

@@ -1,4 +1,4 @@
-root {
+:root {
     animation-delay: 0;
     color: inherit;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -11,6 +11,7 @@ root {
     --almost-white: rgb(230, 230, 230);
     --gray: rgb(94, 94, 94);
     --link: rgb(168, 247, 164);
+    --footer: rgb(128, 128, 128);
 }
 @font-face {
     font-family: 'Montserrat';
@@ -18,7 +19,7 @@ root {
     font-weight: 300; /* kann man noch verändern */
     font-style: normal;
 }
-:: selection {
+::selection {
     background-color: rgb(168, 247, 164);
     color: black;
 }
