@@ -11,6 +11,7 @@ root {
     --almost-white: rgb(230, 230, 230);
     --gray: rgb(94, 94, 94);
     --link: rgb(168, 247, 164);
+    --footer: rgb(128, 128, 128);
 }
 @font-face {
     font-family: 'Montserrat';
