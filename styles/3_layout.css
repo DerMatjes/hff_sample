@@ -13,7 +13,7 @@ body {
 .nav_item {
   border:none;
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   font-size: 1.8rem;
   height: 75px;
@@ -26,7 +26,6 @@ body {
   padding: 50px;
   border-radius: 8px;
   font-size: 1.8rem;
-  background-color: blue;
 }
 
 .footer_item {
@@ -36,5 +35,4 @@ body {
   overflow : hidden;
   border: none;
   margin: 0;
-  background-color: red;
 }
