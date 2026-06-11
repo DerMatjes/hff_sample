@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
     <link rel="stylesheet" href="../styles/1_cards.css">
     <link rel="stylesheet" href="../styles/3_layout.css">
     <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
 </head>
 <body>
 <div class="format-container">
     <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1> Grüner Wasserstoff <br>
+                statt Erdgas, Erdöl und Kohle
+            </h1>
+        </div>
+    </section>
+        <section class="articles">
+        <article class="intro_text">
+            <h2>Hydrogen For Future</h2>
+            <p>
+                <br>
+                ist unsere Initiative, um eine vollständige Defossilisierung zu erreichen und die Zunahme der Erderhitzung zu stoppen. Denn zur Rettung des Klimas benötigen wir so schnell wie möglich einen treibhausgasneutralen Energieträger, der mengenmäßig und technisch umzusetzen ist.
+                <br>
+                Diese Bedingungen erfüllt
+                <strong>Grüner Wasserstoff</strong>
+            </p>
+        </article>
+    </section>
     <div class="cards-container">
         <div class="max-width-def">
             <div class="cards">
                 <a href="kampagne.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/banner.png);">
+                        <div class="top" style="background-image: url(../img/banner.png);">
                             <h3 class="center">Kampagne</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Wir rufen Politik und Industrie dazu auf, zur Rettung des Klimas sofort in die
                                 treibhausgasefreie Grüne Wasserstoffwirtschaft mit allen Fähigkeiten einzusteigen.
                             </p>
@@ -34,12 +55,12 @@
 
                 <a href="energiemengen.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/Energiemengen.png);">
+                        <div class="top" style="background-image: url(../img/Google%20Earth%20processed2.jpeg);">
                             <h3 class="center">Energiemengen</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Mit Wind- und Rinnenkraftwerken lässt sich weltweit um ein Vielfaches mehr Grüner
                                 Wasserstoff erzeugen als weltweit alle fossilen Energieträger zusammen erzeugen können.
                             </p>
@@ -51,14 +72,14 @@
                     </div>
                 </a>
 
-                <a <!--href="unavailable.html">
+                <a href="vorurteile.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/explosion.jpg);">
+                        <div class="top" style="background-image: url(../img/explosion.jpg);">
                             <h3 class="center">Vorurteile</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Wasserstoff ist nicht gefährlicher als die fossilen Energieträger. Die Wirkungsgrade
                                 sind größer als die, der fossilen Energieträger, weswegen deren Diskussion sinnlos
                                 ist.
@@ -66,19 +87,19 @@
                         </div>
 
                         <div class="bottom">
-                            <p>Folgt</p>
+                            <p>Mehr</p>
                         </div>
                     </div>
                 </a>
 
                 <a href="erzeugung.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/Rinnenkraftwerk.jpg);">
+                        <div class="top" style="background-image: url(../img/Rinnenkraftwerk.jpg);">
                             <h3 class="center">Erzeugung</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Große Mengen Wasserstoff lassen sich mit elektrischem Strom und z.B. entsalztem
                                 Meerwasser durch Elektrolyse produzieren.
                             </p>
@@ -92,12 +113,12 @@
 
                 <a href="speicherung.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/Tollesbild.jpg);">
+                        <div class="top" style="background-image: url(../img/Tollesbild.jpg);">
                             <h3 class="center">Speicherung</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Große Mengen Wasserstoff lassen sich in Kavernen speichern und über
                                 Pipelines transportieren
                             </p>
@@ -111,12 +132,12 @@
 
                 <a href="anwendung.html">
                     <div class="card">
-                        <div class="top" style="background-image: url(img/Mirai.jpg);">
+                        <div class="top" style="background-image: url(../img/Mirai.jpg);">
                             <h3 class="center">Anwendungen</h3>
                         </div>
 
                         <div class="middle">
-                            <p>
+                            <p class="small">
                                 Fossile Energieträger können in sämtlichen industriellen Anwendungen komplett durch
                                 Wasserstoff ersetzt werden. In Nischenanwendungen (z. B Flugverkehr) durch synthetische
                                 Kraftstoffe.
@@ -128,11 +149,51 @@
                         </div>
                     </div>
                 </a>
+                
+               <a href="flyer.html">
+                    <div class="card">
+                        <div class="top" style="background-image: url(../img/flyer/flyer-render.png);">
+                            <h3 class="center">Online Flyer</h3>
+                        </div>
+
+                        <div class="middle">
+                            <p class="small">
+                                Hier können Sie die digitale Version unseres Flyers lesen.
+                            </p>
+                        </div>
+
+                        <div class="bottom">
+                            <p>Mehr</p>
+                        </div>
+                    </div>
+                </a> 
+                
+                <a href="film.html">
+                    <div class="card">
+                        <div class="top" style="background-image: url(../img/film.jpg);">
+                            <h3 class="center">Erklärfilm</h3>
+                        </div>
+
+                        <div class="middle">
+                            <p class="small">
+                                Hier können Sie unser Erklärvideo ansehen.
+                            </p>
+                        </div>
+
+                        <div class="bottom">
+                            <p>Mehr</p>
+                        </div>
+                    </div>
+                </a>
+                
             </div>
         </div>
     </div>
+    <a href="quellen.html#Erzeugung-Rinnenbo">
+		<button class="Qbutton"> Quellen </button>
+	</a>
+    </div>
     <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
 </body>
 </html>
-
-
