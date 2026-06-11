@@ -24,7 +24,7 @@
     </div>
 
         <div class="language_item">
-                <a href="#" id="lang-switch" target="_parent"><img src="../img/uk-flag.png" alt="ENG"></a>
+                <a href="#" id="lang-switch" target="_parent"><img src="../img/ger-flag.png" alt="DE"></a>
         </div>
 </div>
 
@@ -37,10 +37,10 @@
         try{
             var u = new URL(baseHref, window.location.href);
             var parts = u.pathname.split('/');
-            var mediaIndex = parts.indexOf('media');
+            var mediaIndex = parts.indexOf('media_eng');
 
             if(mediaIndex >= 0){
-                parts[mediaIndex] = 'media_eng';
+                parts[mediaIndex] = 'media';
             }
 
             u.pathname = parts.join('/');
