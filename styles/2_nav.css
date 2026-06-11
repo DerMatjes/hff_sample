@@ -37,9 +37,7 @@
 
 .home_item:hover,
 .contact_item:hover {
-	background-color: var(--link);
-	color: black;
-	border-radius: 4px;
+	color: var(--hff);
 	transform: scale(1.04);
 	transform-origin: center;
 }
