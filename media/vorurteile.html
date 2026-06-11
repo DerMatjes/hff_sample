@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Example-DE</h1>
+        </div>
+    </section>
+    <div class="content_item">
+        <div class="nav-row" id="nav-link">
+            <a href="#H2E">Explosionsfähigkeit</a>
+            <a href="#EH2">Energiedichte</a>
+            <a href="#ST">Speicherung und Transport</a>
+            <a href="#GWH2">Gesamtwirkungsgrad</a>
+            <a href="#ESLK">Erschwinglichkeit</a>
+        </div>
+    
+    
+    
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+    </script>
+        
+        <button id="scrolltotop"><img src="../img/pfeil.png"></button>
+    
+            <script>
+                document.getElementById('scrolltotop').addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+        </script>
+    
+        <br>
+        <br>
+        
+    <section class="articles">
+        <article>
+            <h2 id="H2E">Ist Wasserstoff explosiv?</h2>
+            <p>
+                Oft werden im Zusammenhang mit der Explosivität des Wasserstoffs die Begriffe <b>"explosiv"</b> und <b>"explosionsfähiges Gemisch"</b> verwechselt. In der folgenden Tabelle sind die verschiedenen Größen von Wasserstoff und Methan zusammengetragen.
+                <a href="../hff/quellen/vorurteile-quellen.html #H2E-Q" target="_parent" class="annotation">[1]</a>
+                
+                <br>
+                <br>
+                
+            </p>
+            
+                <img src="../img/CH4+H2-Kenngroessen.png" width="85%">
+                <a href="../hff/quellen/vorurteile-quellen.html #H2E-Q" target="_parent" class="annotation">[1]</a>
+            
+                <br> 
+                <br> 
+            
+            <p>
+                
+            </p>
+            
+            <h2 id="EH2">Ist die Energiedichte des Wasserstoffs zu gering?</h2>
+            <p>
+                Es wird oft davon geredet, dass die Energiedichte des Wasserstoffs zu gering sei. Aber stimmt das?
+                Die häufigste Ursache hierfür ist die Verwechslung von volumetrischer und gravimetrischer Energiedichte.
+                Wasserstoff hat eine Energiedichte von 0,53 kWh pro Liter bei 200 Bar. Allerdings hat es in Bezug auf Masse eine Energiedichte von <b>33,3 kWh pro Kilogramm</b>. Im Vergleich dazu hat Erdgas bei einem Druck von 200 Bar eine Energiedichte von 2,58 kWh pro Liter und in Bezug auf Masse eine Energiedichte von <b>13,9 kWh pro Kilogramm</b>. Man sieht, dass Erdgas bei 200 Bar knapp 5 mal die Energiedichte von Wasserstoff hat. Allerdings beläuft sich dies auf die volumetrische und nicht die gravimetrische Energiedichte. <b>Wasserstoff hat also fast eine 2 &frac12 mal höhere gravimetrische Energiedichte als Erdgas</b>.
+                <a href="../hff/quellen/vorurteile-quellen.html #EH2-Q" target="_parent" class="annotation">[2]</a>
+            </p>
+            
+            <br>    
+            
+            <h4>Pauschal kann man also nicht sagen, dass Wasserstoff eine geringere Energiedichte hat!</h4> 
+            
+            <br>
+            <br>
+            <br> 
+            
+            <h2 id="ST">Ist Wasserstoff speicher- und transportierbar?</h2>
+            <p>
+                <b>Wasserstoff Autos von BMW:</b>
+                1990 hat BMW ihr erstes Wasserstoffauto hergestellt. Ein erstes Bedenken bei dem auf -253 Grad C° gekühlten Wasserstofftank war, dass es zu viel Permeationsverluste gäbe. Permeationsverluste sind Verluste, die sich auf das Ausdampfen belaufen. Jedoch hatte der Wasserstoff-BMW 7 zwei entscheidende Unterschiede zu den heutigen Wasserstoffautos. Er war zum einen ein Verbrenner (ICEV = internal combustion engine vehicle) und wies daher einen schlechteren Wirkungsgrad als ein FCV (fuel cell vehicle) auf, zum anderen (und das ist entscheidend), hatte sich BMW für verflüssigten Wasserstoff entschieden. Dazu wurde ein isolierter Tank entwickelt, der bei Druckaufbau wegen Verdampfens den Wasserstoff kontrolliert entweichen ließ. So war nach einer längeren Standzeit der Tank fast leer.
+                Das hat zu dem Mythos geführt, Wasserstoff ließe sich nicht dauerhaft speichern. Heute aber speichert man H2 in Drucktanks, die keine Wasserstoffverluste verzeichnen.
+            </p> 
+            
+            <p>
+                Außerdem produziert BMW, während viele andere Hersteller sich auf batteriebetriebene Autos konzentrieren, weiter Wasserstoff Autos. Denn bei BMW glaubt man, dass sich Brennstoffzellen, wie jene im <b>BMW iX5</b> durchaus lohnen können. 
+                    
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[3]</a>
+                    
+            </p> 
+            
+                <br>
+                <br>
+            
+            <h3>Lagerung von Wasserstoff im Labor</h3>
+            <p>
+                Wasserstoff muss gut belüftet in Druckgasflaschen gelagert werden. Diese Gasflaschen müssen durch Sicherheitsschilder und Warnschilder gekennzeichnet werden, da Wasserstoff ein <b>hoch entzündliches Gas</b> ist. Deshalb müssen elektrische Anlagen und Geräte in der Nähe nach bestimmten Vorschriften einhalten. Sehr wichtig ist letztlich auch, dass Wasserstoff Gasflaschen nicht mit anderen Gasflaschen gelagert werden.
+                
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[4]</a>
+                
+            </p>
+         
+                <br>
+                <br>
+                
+                <h3>Vergleich von Speichern für elektrische Energie aus erneuerbaren Energien (eE) mit fossilen Quellen</h3>
+                <img src="../img/Vergleich%20eE%20mit%20fossil%20Tabelle.png" width="85%"> 
+            
+                <br>
+                <br>
+            
+            <h3>100% grüner Wasserstoff nahe Dortmund</h3>
+            <p>
+                Holzwickede ist eine Gemeinde nahe Dortmund, welche nun mit grünem Wasserstoff durch eine Erdgasleitung versorgt wird. Dieser klimaneutrale Wasserstoff ist von der <b>Qualität 3.0, also einer Reinheit von 99,9%</b>. Die Leitung wird durch einen Wasserstoffspeicher gespeist, worin der grüne Wasserstoff mit 42 bar gespeichert wird. <b>Westnetz</b> hatte erstmals einen Zusatz von mehr als durch die Norm vorgeschriebenen 10% Wasserstoff im Erdgas erprobt, ohne dass Probleme eintraten. Außerdem traten keine neuen Probleme mit <b>100% Wasserstoff als Ersatz für Erdgas</b> auf. Also war es klar, dass man das Erdgasnetz mit <b>100% grünem Wasserstoff</b> befüllen konnte.           
+                
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[5]</a>
+                
+                <br>
+                <br>
+            
+            </p>
+            <h2 id="GWH2">Ist der Gesamtwirkungsgrad des Wasserstoffs gering?</h2>
+            <p>
+                Der Gesamtwirkungsgrad von Wasserstoff setzt sich aus mehreren Wirkungsgraden zusammen: 
+                <a href="../hff/quellen/vorurteile-quellen.html #GWH2-Q" target="_parent" class="annotation">[6]</a>
+                
+                <br>
+                <br>
+                
+                <b>Ökostromerzeugung: ~70%</b> (Wirkungsgrad variiert nach Anteilen von der Form der Erzeugung (Wasserkraft, Windkraft, Solar)) 
+                
+                <br>
+                
+                <b>Alkalische Elektrolyse: 80%</b>
+                
+                <br>
+                
+                <b>Kompression auf 1 000 bar: 88%</b> 
+                
+                <br>
+                
+                <b>Transport: 99%</b> 
+                
+                <br>
+                
+                <b>PEM-Brennstoffzelle: 70%</b>
+                
+                <br>
+            </p>
+                <h3>Gesamtwirkungsgrad: 34%</h3>
+            
+                <br>
+                <br>
+            
+            <p>
+                Vergleich: Wirkungsgrade von Benzin:
+                <a href="../hff/quellen/vorurteile-quellen.html #GWH2-Q" target="_parent" class="annotation">[6]</a>
+                
+                <br>
+                
+                <b>Well-To-Tank: 82%</b> (Einzelwerte von Produktion bis Fahrzeug nicht vorhanden)
+                
+                <br>
+                
+                <b>Verbrennung: 18% </b> (realer Stadtverkehr)
+                
+                <br>
+    
+            </p>
+                <h3>Gesamtwirkungsgrad: 15%</h3>
+            
+                <br>
+                <br>
+                
+                <h3>Als Vergleich: Der Wirkungsgrad der Natur</h3>
+                <img src="../img/Natur%20Effizienz.png" width="85%">
+                <p>
+                    Der Wirkungsgrad der Photosynthese ist mit ca. 1% eher bescheiden. Betrachtungen von Wirkungsgraden alleine sind daher nicht sinnvoll, denn es kommt auf eine systemische Betrachtung eines Energiesystems an. Alternativen zur stofflichen Speicherung wie Akkus sind zwar effizienter, haben aber nicht die geforderte Kapazität und sind nicht in der Lage, auch saisonalen Speicherbedarf zu decken!
+                </p>
+                    
+                <br>
+                <br>
+                <br>
+                <br>
+                    
+                <h3>Wasserstoff als Energieträger mit mehr Lagerkapazität</h3>
+                <img src="../img/Power-to-Gas.png" width="85%">
+            
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                <h2 id="ESLK">Ist die Wasserstofftechnologie zu teuer?</h2>
+            <p>
+                Über die letzten Jahre wurde der Platinanteil in der PEM-Brennstoffzelle wurde drastisch verringert und in einem FCV <b>(Fuel Cell Vehicle) mit 120 kW Leistung</b> sind gerade mal 5 g mehr Platin als in einem Benziner vorhanden, welche dafür allerdings recyclebar sind. Außerdem ist die Erzeugung von Wasserstoff in Regionen mit starker Sonnenbestrahlung <b>(Spanien/Nordafrika)</b> und starkem Wind <b>(Nordsee/Alaska)</b> deutlich wirtschaftlicher und in Zukunft ist es zu erwarten, dass bei häufigerer Verwendung von Wasserstofftechnologie der Preis immer weiter sinkt.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[7]</a>
+            </p>
+            
+                <br>
+                <br>
+            
+            <h3>Produktionskosten von verschiedenen Wasserstofftypen für 2019 und Prognosen für 2030 und 2050</h3>
+            <p class="bigger">
+                Preis in ct/kWh H<sub>2</sub>
+            </p>
+            
+                <img src="../img/Elektrolyseure%20Preissturz.png" width="80%">
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[8]</a>
+            
+                <br>
+                <br>
+
+            
+            <h3>Grenzübergangspreis von Erdgas</h3>
+            <p class="bigger">
+                Monatliche Entwicklung seit 2013 in ct/kWh
+            </p>
+                
+                <img src="../img/Grenzuebergangspreis%20Erdgas.png" width="80%">
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[9]</a>
+            
+                <br>
+                <br>
+                <br>
+            
+            <p>
+                Der Grenzübergrangspreis pro Terajoule Erdgas lag im April 2021 bei 4 481,73 Euro. Dieser steigt in gerade mal 11 Monaten um ca. <b>330 Prozent</b>, also um mehr als 
+                <br>
+                10 000 Euro auf 14 756,39 Euro pro Terajoule Erdgas. Einen Monat später, im April 2022, lag der Preis bei 17 941,65 Euro. Dementsprechend 21,6 Prozent über dem Preis im März und ca. <b>300 Prozent</b> über dem Preis von einem Jahr davor, im April 2021. Also lag der Preis pro kWh Erdgas im April 2021 bei <b>1,6 Cent und gerade mal ein Jahr später bei 6,46 Cent.</b> Diese starken Preisschwankungen haben ihre Ursache in der Instabilität der politischen Situation in den Erzeugerstaaten. 
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[10]</a>
+                
+                <br>
+                <br>
+                
+                Auf längere Zeit gesehen kann man Prognosen entnehmen, dass das Erdgas, je nach Szenario, 2 bis 6,6 ct/kWh kosten wird. Zum Vergleich: die Produktionskosten von Wasserstoff werden nach Prognosen zwischen <b>6 und 12 ct/kWh</b> kosten.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[11]</a>
+                <br>
+                Außerdem würden sich die Kosten, um das Gasnetz H2-ready zu machen auf rund 
+                <br>
+                45 Milliarden Euro innerhalb eines Zeitraums von 30 Jahren belaufen. 
+                <br>
+                Also 1,5 Milliarden pro Jahr, was ca. <b>einem viertel der bisherigen routinemäßigen Ersatzinvestitionen</b> entspricht. Zum Vergleich dazu betrugen die Differenzkosten der EEG-Umlage in den Jahren von 2015-2020 mehr als 20 Milliarden Euro.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[12]</a>
+            </p>
+        </article>
+    </section>
+    
+    <a href="quellen.html#Erzeugung-Rinnenbo">
+		<button class="Qbutton"> Quellen </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>
