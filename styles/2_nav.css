@@ -1,6 +1,5 @@
 .nav {
-	display: grid;
-	grid-template-columns: 1fr 250px 10fr  100px 70px 1fr;
+	display: flex;
 	align-items: center;
 	gap: 1rem;
 	padding: 0 1rem;
@@ -9,7 +8,7 @@
 }
 
 .logo_item {
-	grid-column: 2;
+	flex: 0 0 auto;
 }
 
 .logo_item img {
@@ -19,8 +18,7 @@
 }
 
 .nav__group {
-	grid-column: 4;
-	justify-self: end;
+	margin-left: auto;
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -43,7 +41,7 @@
 }
 
 .language_item {
-    grid-column: 5;
+	flex: 0 0 auto;
 }
 
 
@@ -60,4 +58,42 @@
 	padding: 0.35rem 0.6rem;
 	text-decoration: none;
 	color: inherit;
+}
+
+@media (max-width: 750px) {
+	.nav {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		height: auto;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.2rem;
+	}
+
+	.logo_item {
+		grid-column: 1;
+	}
+
+	.logo_item img {
+		height: 40px;
+	}
+
+	.nav__group {
+		grid-column: 2;
+		justify-self: end;
+		gap: 0.05rem;
+	}
+	.home_item,
+	.contact_item {
+		font-size: 1.2rem;
+	}
+
+	.language_item {
+		grid-column: 3;
+	}
+
+	.language_item img,
+	#lang-switch img {
+		width: 40px;
+	}
 }
