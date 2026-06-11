@@ -3,13 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>HfF Nav</title>
+    <link rel="stylesheet" href="../styles/2_nav.css">
     <link rel="stylesheet" href="../styles/3_layout.css">
     <link rel="stylesheet" href="../styles/2_Media.css">
     <link rel="stylesheet" href="../styles/1_BaseRules.css">
 </head>
 <body bgcolor="white" style="height: 75px;" class: top_item>
-<div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vero facilis maxime, repellendus quae ab! Delectus saepe quasi quisquam! Similique facilis in consequuntur doloremque. Corrupti similique cupiditate eligendi repudiandae! Ipsa.</p>
+<div class="nav">
+    <div class="logo_item">
+        <a href="index.html" target="_parent"><img src="../img/logo-text.png"></a>
+    </div>
+
+    <div class="nav__group">
+        <div class ="home_item">
+            <a href="index.html" target="_parent">Home</a>
+        </div>
+        <div class="contact_item">
+            <a href="contact.html" target="_parent">Kontakt</a>
+        </div>
+    </div>
+
+        <div class="language_item">
+                <a href="#" id="lang-switch" target="_parent">DE</a>
+        </div>
 </div>
+
+<script>
+(function(){
+    var a = document.getElementById('lang-switch');
+    if(!a) return;
+
+    function buildEngUrl(baseHref){
+        try{
+            var u = new URL(baseHref, window.location.href);
+            var parts = u.pathname.split('/');
+            var last = parts.pop() || '';
+            if(!last){
+                last = 'index.html';
+            }
+            var dot = last.lastIndexOf('.');
+            var newLast = dot > 0 ? last.slice(0,dot) + '_eng' + last.slice(dot) : last + '_eng';
+            parts.push(newLast);
+            u.pathname = parts.join('/');
+            return u.href;
+        }catch(e){
+            return baseHref;
+        }
+    }
+
+    function setHref(){
+        var parentHref;
+        try{
+            parentHref = window.parent.location.href;
+        }catch(e){
+            parentHref = window.location.href;
+        }
+        var eng = buildEngUrl(parentHref);
+        a.setAttribute('href', eng);
+    }
+
+    setHref();
+
+    a.addEventListener('click', function(ev){
+        ev.preventDefault();
+        var href = a.getAttribute('href');
+        try{
+            window.parent.location.href = href;
+        }catch(e){
+            window.location.href = href;
+        }
+    });
+})();
+</script>
 </body>
 </html>
