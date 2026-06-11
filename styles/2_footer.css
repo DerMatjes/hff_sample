@@ -8,7 +8,7 @@ body {
     justify-items: center;
     column-gap: 40px;
     grid-template-columns: max(5%, 2fr) 1fr 1fr max(5%,2fr);
-    grid-template-rows: 25px 300px 75px;
+    grid-template-rows: 20px 280px 75px 25px;
     height: 100%;
     width: 100%;
     position: relative;
