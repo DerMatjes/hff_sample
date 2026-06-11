@@ -72,3 +72,7 @@ strong {
     font-weight: 700;
     color: var(--hff);
 }
+
+.green {
+    color: var(--hff);
+}
