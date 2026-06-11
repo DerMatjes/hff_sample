@@ -1,6 +1,6 @@
 .nav {
 	display: grid;
-	grid-template-columns: 1fr 500px 10fr 200px 70px 1fr;
+	grid-template-columns: 1fr 250px 10fr 200px 70px 1fr;
 	align-items: center;
 	gap: 1rem;
 	padding: 0 1rem;
@@ -29,11 +29,19 @@
 .home_item,
 .contact_item {
 	flex: 0 0 auto;
+	font-size: 1.6rem;
 }
 
 .language_item {
     grid-column: 5;
-	font-size: 3rem;
+}
+
+
+.language_item img,
+#lang-switch img {
+	display: block;
+	width: 80px;
+	height: auto;
 }
 
 .nav a {
