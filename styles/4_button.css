@@ -1,0 +1,9 @@
+.Qbutton {
+	display: inline-block;
+	padding: 1em 1em;
+	background: var(--hff);
+	color: black;
+	text-decoration: none;
+	border-radius: 30px;
+	text-align: center;
+}
