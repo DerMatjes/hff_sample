@@ -73,9 +73,9 @@
   transform: scale(1.02);
 }
 
-.techcard:hover .bottomalt {
+.techcard:hover .bottomalt p {
   color: var(--link);
-    font-size: 1.75em;
+    font-size: 2em;
     transition: font-size 0.125s ease-in-out;
 }
 
