@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Erzeugung</h1>
+        </div>
+    </section>
+    <div class="content_item">
+        <section class="articles">
+      <article>
+        <h2>Das Windkraftwerk</h2>
+        <p class="bigger left-align kursiv bottom-margin">
+          Aus der Facharbeit von Dorothee Milles.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Mit Windkraftwerken können wir aus Sonnenenergie elektrische Energie
+          (oder Wärmeenergie) gewinnen. Mit dieser gewonnenen Energie kann
+          durch Elektrolyse eine große Menge an Grünem Wasserstoff erzeugt
+          werden.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Doch erst einmal muss erklärt werden, wie Wind überhaupt entsteht:
+          Durch die Sonne bzw. die Sonnenenergie wird die Luft an verschiedenen
+          Stellen unterschiedlich stark erhitzt, wobei Hoch- und
+          Tiefdruckgebiete entstehen. Wind wird nun erzeugt, wenn dieser
+          Druckunterschied durch Luftmassen (bestehend aus Luftteilchen)
+          ausgeglichen wird. Der Wind ist ganz simpel ausgedrückt eine
+          schnellere und stärkere Luftmasse als die restliche, angeregt von der
+          Energie der Sonne.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Die Rotorblätter und der Rotor eines Windrades fangen die
+          Bewegungsenergie (kinetische Energie) des Windes auf und wandeln sie
+          in Rotationsenergie um. Daher müssen die Blätter möglichst lang und
+          großflächig sein. Damit es zu einer Leistungsentnahme kommen kann,
+          muss die Strömungsgeschwindigkeit des Windes verringert werden. Laut
+          dem berühmten Physiker Betz steigt die Leistung W proportional kubisch zur Geschwindigkeit v. So
+          erhält man also bei doppelter Geschwindigkeit eine achtfache Leistung
+          und bei doppeltem Rotordurchschnitt eine vierfache Leistung. Dies
+          zeigt, wie effizient Windräder sind.
+          <br />
+          Anschließend wandelt das Getriebe die relativ langsamen Umdrehungen
+          des Rotors (ca. 22 pro Minute) in eine schnelle Drehzahl (ca. 1 500
+          Umdrehungen pro Minute) für den Generator um. Der Generator ist das
+          Herz des Windrades, da er die Rotationsenergie in elektrische Energie
+          umwandelt.
+          <br />
+          Um zu zeigen, wie effizient Windkraftanlagen sind, hier nun ein
+          Beispiel: Der Windpark „Gode Wind 1 und 2“ befindet sich in der
+          Nordsee und umfasst 97 Windkraftwerke mit je einer Leistung von 6 MW.
+          Dabei liefert Gode Wind 1 ca. 330 MW und Gode Wind 2 ca. 252 MW, womit
+          sie zusammen ganze 600 000 Haushalte versorgen können. In Deutschland
+          könnte man mit dem grünen Strom der Windräder schadstofffrei 1,1
+          Milliarden Tonnen Wasserstoff herstellen. Anhand meines Textes und
+          dem Beispiel wird deutlich, wie sehr sich die Windenergie lohnt und
+          was für ein Potenzial diese mit dem grünen Wasserstoff für unsere
+          Zukunft hat.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Bspl.: Energieberechnung des Windparks Gode Wind 1 und 2:
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Volllaststunden pro Jahr: \(365 \cdot 24 \ h = 8\ 760 \ h\)
+        </p>
+        <p class="bigger formel">\[8\ 760 \ h \cdot 3\ 600 = 31\ 536\ 000 \ s \]</p>
+
+        <p class="bigger left-align">
+          Leistung P von den Windparks: \(330 \ MW + 252 \ MW = 582 \ MW\)
+        </p>
+        <p class="bigger formel">\[P \cdot t = W\]</p>
+        <p class="bigger left-align">Theoretisch maximaler Energieertrag:</p>
+        <p class="bigger formel">
+          \[582 \ MW \cdot 31\ 536\ 000 \ s = 1,8353952 \cdot 10^{16} \ Ws\] \[1,8353952
+          \cdot 10^{16} \ Ws = 5,098 \cdot 10^9 \ kWh\]
+        </p>
+        <p class="bigger left-align bottom-margin">
+          45,7% davon entsprechen einem realistischer Energiebetrag:
+          <br />
+          2 329 932 240 kWh
+        </p>
+        <p class="bigger left-align bottom-margin">Menge an Wasserstoff:</p>
+        <p class="bigger left-align">
+          In einem kg Wasserstoff können 33,3 kWh Energie gespeichert werden,
+          also:
+        </p>
+        <p class="bigger left-align">W = Energiewasserstoff / kg</p>
+        <p class="bigger formel">
+          \[ \frac {2\ 329\ 932\ 240\ kWh \cdot kg} {33,3\ kWh} = 69\ 963\ 543,5\ kg \]
+        </p>
+        <img class="quer" src="../img/Windkraftwerk1.jpg" />
+        <img class="quer" src="../img/Windkraftwerk2.jpg" />
+      </article>
+    </section>
+    
+    <a href="quellen.html#Erzeugung-Rinnenbo">
+		<button class="Qbutton"> Quellen </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>
