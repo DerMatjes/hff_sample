@@ -13,6 +13,7 @@ body {
 .nav_item {
   border:none;
   position: fixed;
+  z-index: 1000;
   top: 0px;
   width: 100%;
   font-size: 1.8rem;
