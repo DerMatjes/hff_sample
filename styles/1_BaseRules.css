@@ -79,19 +79,19 @@ p {
 
 @media (max-width: 750px) {
     h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 1.75em;
-    }
-    h3 {
         font-size: 1.5em;
     }
+    h2 {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
     p {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .small {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .strong {
         font-weight: 600;
