@@ -1,9 +1,31 @@
 .Qbutton {
-	display: inline-block;
-	padding: 1em 1em;
-	background: var(--hff);
-	color: black;
+	display: block;
+	margin: 0.75rem auto;
+	padding: 0.65rem 1.25rem;
+	background: linear-gradient(90deg, var(--hff), #2fa4ff);
+	color: #fff;
 	text-decoration: none;
-	border-radius: 30px;
+	border-radius: 999px;
+	border: none;
+	width: auto;
+	min-width: 140px;
+	max-width: 90%;
 	text-align: center;
+	font-weight: 600;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.12), inset 0 -2px 0 rgba(255,255,255,0.06);
+	transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.Qbutton:hover,
+.Qbutton:focus {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+	opacity: 0.98;
+}
+
+.Qbutton:active {
+	transform: translateY(0);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }

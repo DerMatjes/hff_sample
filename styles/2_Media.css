@@ -1,5 +1,5 @@
 .m-horizontal {
-
+    margin: 1em auto 0 auto; /* top, horizontal, bottom */
     border-radius: 0.75em;
     width: 100%;
     display: block; /* needed for margin auto to work on images */
@@ -17,4 +17,11 @@
     border-radius: 32px;
     width: 100%;
     height: auto;
+}
+
+.film-iframe {
+    margin-top: 1em;
+    border-radius: 5px;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* 16:9 aspect ratio */
 }
