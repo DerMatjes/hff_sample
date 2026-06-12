@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaverne</title>
+    <link rel="icon" href="../img/favicon.png">
+    <script src="../cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Kaverne</h1>
+        </div>
+    </section>
+    <div class="content_item">
+    <section class="articles">
+      <article>
+        <h2>Speicherung von grünem Wasserstoff in Kavernen</h2>
+        <p class="bigger left-align kursiv bottom-margin">
+          Aus der Facharbeit von Jens Oster-Daum.
+        </p>
+        <p class="bigger left-align">
+          Die großen Mengen an Grünem Wasserstoff müssen wir in Zukunft
+          effizient und mühelos speichern können. Dieses Vorhaben ist in großen
+          unterirdischen Hohlräumen, Kavernen, möglich. In Deutschland findet
+          man zurzeit schon einige Kavernen, die bis jetzt als Erdgasspeicher
+          genutzt werden. Eine Kaverne in Bad Lauchstädt, dient als
+          Forschungskaverne zum Speichern von Wasserstoff. Reichen die
+          bisherigen Standorte nicht aus, ist es möglich mithilfe eines
+          sogenannten Solprozesses neue Salzkavernen zu errichten.
+        </p>
+        <img class="quer" src="../img/KaverneKarte.jpg" />
+        <p class="bigger left-align">
+          Eingespeichert wird das Gas mithilfe von Kompressoren, die den
+          Wasserstoff (der aus den Pipelines mit ca. 60 bar kommt) auf einen Druck von 200 bar. So herrscht
+          in einer Kaverne bei maximaler Befüllung ein Druck bis zu 200 bar und
+          eine Temperatur von ungefähr 30°C. Beim Ausspeichern kann mit einer
+          Turbine, durch die das Gas strömt, zusätzlich noch einmal elektrische
+          Energie gewonnen werden, welche man beim Einspeichern durch die
+          Verdichter aufbringen musste. Gespeicherte Energiemenge:
+          <br />
+          Beispielrechnung an einer Erdgaskaverne mit einem Volumen von
+          989.600 m³:
+          <br />
+          Berechnen der Teilchenanzahl N:
+        </p>
+        <p class="bigger formel">\[p \cdot V = k\cdot N\cdot T\]</p>
+        <p class="bigger formel">
+          \[N = \frac {p\cdot V} {k\cdot T}\]
+            
+            <div style="font-size: 105%;">
+                \( = \frac {2 \cdot 10^7 \cdot\ 989\ 600} {1,38 \cdot 10^{-23} \cdot\ 303,15} \)
+                \( \frac {kg \cdot s^2 \cdot m^3 \cdot K} {kg\cdot s^2 \cdot m \cdot m^2 \cdot K} \)
+                \((=\frac {Pa\cdot m^3 \cdot K}{J\cdot K}) \)
+                    </div>
+          
+          <p class="bigger formel">
+             \( =4,73 \cdot 10^{33}\) Teilchen
+            </p> 
+                </p>
+        <p class="bigger left-align">Berechnen der Stoffmenge n:</p>
+        <p class="bigger formel">
+          \(N_A = {N \over n}\) Avogadro-Konstante: \(N_A=6,022 \cdot 10^{23}
+          {1\over mol} \)
+          <!-- -->
+          \[n={N\over N_A}\]
+          <!-- -->
+          \[=\frac {4,73\cdot 10^{33} \cdot mol} {6,022 \cdot 10^{23} \cdot 1
+          }\]
+          <!-- -->
+          \[=7,8 \cdot 10^9 \ mol\]
+        </p>
+        <p class="bigger left-align">
+          Berechnen der chemischen Energie: Die chemische Energie in Wasserstoff
+          beträgt \(289,5 {kJ \over mol}\).
+        </p>
+        <p class="bigger formel">
+          \[E_{ch}=289,5 \cdot 7,8 \cdot 10^9 \ kJ\]
+          <!-- -->
+          \[=2,258 \cdot 10^{12} \ kJ\] \[=2,25 \ PJ\] \[=6,25 \cdot 10^8 \ kWh\]
+        </p>
+        <p class="bigger left-align">
+          Ist die Kaverne bis auf 200 bar mit Wasserstoff gefüllt, sind dort
+          2,25 PJ bzw. \(6,25 \cdot 10^8 \ kWh\) an Energie gespeichert. Bei einem
+          Jahresenergieverbrauch eines Einfamilienhauses von 3 500 kWh, könnte
+          man mit einmaliger Befüllung der Kaverne ca. 178 500
+          Einfamilienhaushalte ein Jahr lang mit Energie versorgen.
+        </p>
+      </article>
+    </section>
+    
+    <a class="clean" href="quellen.html#Kaverne">
+		<button class="Qbutton"> Quellen </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>
