@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HfF-GF_3DTest1</title>
+
+		<link rel="stylesheet" href="public/index.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <style>
+      #heading {
+        text-align: center;
+        padding: 20px;
+        color: black;
+      }
+
+      #viewer {
+        width: 1000px;
+        aspect-ratio: 16 / 9;
+        margin: 20px auto;
+        border: 10px solid #7c7c7c;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      #progress-container {
+        text-align: center;
+        color: black;
+        margin-top: 10px;
+      }
+
+      body {
+        margin: 0;
+        background: white; /* #222 */
+        color: black;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+
+	</head>
+	<body>
+    <div id="heading">
+      <h1>3D Modell unseres Gigafabrik Konzepts</h1>
+      <div class="border"></div>
+    </div>
+
+    <div id="viewer">
+
+    <div id="progress-container">
+        <div id="progress">Model loading...</div>
+      </div>
+    </div>
+		  <script type="module">
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        const container = document.getElementById('viewer');
+
+        const renderer = new THREE.WebGLRenderer({
+          antialias: true
+        });
+
+        renderer.outputColorSpace = THREE.SRGBColorSpace;
+        renderer.setClearColor(0x393939);
+        renderer.setPixelRatio(window.devicePixelRatio);
+
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+        renderer.setSize(
+          container.clientWidth,
+          container.clientHeight
+        );
+
+        container.appendChild(renderer.domElement);
+
+
+
+        const scene = new THREE.Scene();
+
+        const camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 10000);
+        camera.position.set(50, 60, -250);
+        camera.lookAt(0, 35, -170);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = false;
+        controls.enablePan = false;
+        controls.screenSpacePanning = false;
+        controls.enableRotate = true;
+        controls.enableZoom = true;
+        controls.autoRotate = false;
+        controls.minDistance = 1;
+        controls.maxDistance = 333;
+        controls.minPolarAngle = 0.5;
+        controls.maxPolarAngle = 1.225;
+        /* controls.target = new THREE.Vector3(0, 35, -170); */
+        controls.target.set(-75, 0, -50);
+        
+        
+        controls.update();
+        
+
+
+        const sunLight = new THREE.DirectionalLight(
+          0xffffff,
+          3
+        );
+        sunLight.position.set(100, 200, 100);
+        scene.add(sunLight);
+
+
+
+        const loader = new GLTFLoader();
+        loader.load('HfF Gigafabrik10.glb', (gltf) => {
+          console.log('loading model');
+          const mesh = gltf.scene;
+
+          mesh.traverse((child) => {
+            if (child.isMesh) {
+              child.castShadow = true;
+              child.receiveShadow = true;
+            }
+          });
+
+          mesh.position.set(0, 0, 0);
+          scene.add(mesh);
+
+
+
+          document.getElementById('progress-container').style.display = 'none';
+        }, (xhr) => {
+          console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
+        }, (error) => {
+          console.error(error);
+        });
+
+
+
+        window.addEventListener('resize', () => {
+          const width = container.clientWidth;
+          const height = container.clientHeight;
+
+          camera.aspect = width / height;
+          camera.updateProjectionMatrix();
+
+          renderer.setsize(width, height);
+        })
+
+        function animate() {
+          requestAnimationFrame(animate);
+          controls.update();
+          renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>
+	</body>
+</html>
