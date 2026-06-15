@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+    <script id="MathJax-script" async src="../cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Production</h1>
+        </div>
+    </section>
+    <div class="content_item">
+        <section class="articles">
+      <article>
+        <h2>Parabolic trough power plants</h2>
+        <p class="bigger left-align kursiv bottom-margin">
+          Translated from a technical paper by Mathias Lief.
+        </p>
+        <p class="bigger left-align">
+          Solar energy is an ideal energy source for generating electricity and hydrogen without the use of fossil fuels. 
+          In sunny regions, parabolic trough power plants offer an efficient way to harness these enormous amounts of energy for the production of electricity or for the electrolysis of hydrogen.
+        </p>
+        <h3>How it works</h3>
+        <p class="bigger left-align">
+          A parabolic trough power plant is a concentrating
+          solar power plant. This means it uses parabolic mirrors to concentrate
+          the sun’s rays onto a long absorber tube.
+          This tube is filled with a fluid (the heat transfer medium),
+          which absorbs the energy of the rays in the form of heat. This heat
+          is then transported further to be used for generating
+          electricity. To ensure that the power plant can continue to generate electricity
+          at night, a thermal storage system is required. During periods of
+          strong solar radiation and low electricity demand, this system stores a portion of the heat
+          contained in the heat transfer fluid so that it can be released again as needed for
+          electricity production.
+        </p>
+
+        <img class="m-horizontal" src="../img/Rinnenkraftwerk.jpg"/>
+        <p class="bigger left-align">
+          The absorbed heat is transferred to a second
+          steam cycle via heat exchangers (preheaters,
+          evaporators, superheaters, and intermediate superheaters). The resulting steam then drives
+          a turbine, which generates electricity with the help of a generator. To
+          absorb as much heat as possible, the steam is cooled
+          until it returns to a liquid state.
+        </p>
+        <h3>Energy yield</h3>
+        <p class="bigger left-align">
+          The amount of energy yield depends on the overall efficiency of the system.
+          Energy losses occur during concentration on the
+          absorber, during heat transfer, and during conversion to electricity.
+          The efficiency of an efficient
+          power plant for electricity generation is about 50%; when storing energy in
+          hydrogen, about 10% of the total efficiency is lost compared to that of
+          electricity. In a hypothetical—but realistic—plant covering
+          an area of 600,000 m² (corresponding to a square with an
+          edge length of 775 m), approximately 160,000 m² is used as a mirror surface. 
+          Based on an annual average solar irradiance (including nights) of 500 W/m², this results inthe electrical output.
+        </p>
+        <p class="bigger formel">
+          \[P_{electr} = {160\ 000 \ m^2 \cdot 500 \ \frac {W}{m^2} \ \cdot 0,5 }\] \[ = 4 \cdot 10^7 \
+          W\]<span style="font-size: 0.8em; font-weight: bold">(40 000 000 Watt)</span>
+        </p>
+        <p class="bigger left-align">
+          Over the course of one year (\(3,1 \cdot 10^7s\)) the energy yield is:
+        </p>
+        <p class="bigger formel">
+            \(E_{electr} = 4 \cdot 10^7 \ W\cdot 3,1 \cdot 10^7 \ s\) 
+            \[= 1,3 \cdot 10^{15} \ J \]\[=360 \cdot 10^6 \ kWh \]<span style="font-size: 0.8em; display: inline-block; font-weight: bold">(360 000 000 kWh)</span>
+          </p>
+        <p class="bigger left-align">
+          Similarly, based on an annual energy demand of 3,500
+          kWh, this area could supply approximately 100,000 households with
+          electricity.
+        </p>
+      </article>
+    </section>
+    
+    <a class="clean"  href="quellen.html#Erzeugung-Rinnen">
+		<button class="Qbutton"> Sources </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>

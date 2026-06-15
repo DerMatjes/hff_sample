@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+    <script id="MathJax-script" async src="../cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Production</h1>
+        </div>
+    </section>
+    <div class="content_item">
+        <section class="articles">
+      <article>
+        <h2>The wind power plant</h2>
+        <p class="bigger left-align kursiv bottom-margin">
+          Translated from a technical paper by Dorothee Milles.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Wind power plants allow us to convert solar energy into electrical energy
+          (or thermal energy). Using this energy,
+          a large amount of green hydrogen can be produced
+          through electrolysis.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          But first, we need to explain how wind is actually formed:
+          The sun, or rather solar energy, heats the air to varying
+          degrees in different places, creating areas of high and
+          low pressure. Wind is generated when this
+          pressure difference is balanced out by air masses (consisting of air particles).
+           Put simply, wind is a
+          faster and stronger air mass than the rest, driven by the
+          energy of the sun.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          The rotor blades and rotor of a wind turbine capture the
+          kinetic energy of the wind and convert it
+          into rotational energy. Therefore, the blades must be as long and
+          as large as possible. In order for power to be extracted,
+          the wind’s flow velocity must be reduced. According to
+          the famous physicist Betz, the power P increases proportionally to the cube of the velocity v. Thus,
+          doubling the velocity yields eight times the power,
+          and doubling the rotor diameter yields four times the power. This
+          demonstrates how efficient wind turbines are.
+          <br />
+          The gearbox then converts the relatively slow rotation
+          of the rotor (approx. 22 revolutions per minute) into a high rotational speed (approx. 1,500
+          revolutions per minute) for the generator. The generator is the
+          heart of the wind turbine, as it converts rotational energy into electrical energy.
+          <br />
+          To illustrate just how efficient wind turbines are, here is an
+          example: The “Gode Wind 1 and 2” wind farm located in the
+          North Sea and comprises of 97 wind turbines, each with a capacity of 6 MW.
+          Gode Wind 1 generates approximately 330 MW and Gode Wind 2 approximately 252 MW, meaning
+          together they can supply a total of 600,000 households. In Germany,
+          the green electricity from these wind turbines could be used to produce 1.1
+          billion tons of hydrogen without emitting pollutants. Based on my text and
+          this example, it becomes clear just how worthwhile wind energy is and
+          what potential it holds for our
+          future in combination with green hydrogen.
+        </p>
+        <p class="bigger left-align bottom-margin">
+          The energy calculation for the Gode Wind 1 and 2 wind farm is as follows:
+        </p>
+        <p class="bigger left-align bottom-margin">
+          Full-load hours per year: \(365 \cdot 24 \ h = 8\ 760 \ h\)
+        </p>
+        <p class="bigger formel">\[8\ 760 \ h \cdot 3\ 600 = 31\ 536\ 000 \ s \]</p>
+
+        <p class="bigger left-align">
+          Power P of the wind farms: \(330 \ MW + 252 \ MW = 582 \ MW\)
+        </p>
+        <p class="bigger formel">\[P \cdot t = W\]</p>
+        <p class="bigger left-align">Theoreticla maximum energy yield:</p>
+        <p class="bigger formel">
+          \[582 \ MW \cdot 31\ 536\ 000 \ s = 1,8353952 \cdot 10^{16} \ Ws\] \[1,8353952
+          \cdot 10^{16} \ Ws = 5,098 \cdot 10^9 \ kWh\]
+        </p>
+        <p class="bigger left-align bottom-margin">
+          45,7% of that represent a realistic energy amount:
+          <br />
+          2 329 932 240 kWh
+        </p>
+        <p class="bigger left-align bottom-margin">Corresponding amount of hydrogen:</p>
+        <p class="bigger left-align">
+          One kilogram of hydrogen can store 33.3 kWh of energy,
+          so:
+        </p>
+        <p class="bigger left-align">W = energy of hydrogen per kg</p>
+        <p class="bigger formel">
+          \[ \frac {2\ 329\ 932\ 240\ kWh \cdot kg} {33,3\ kWh} = 69\ 963\ 543,5\ kg \]
+        </p>
+        <img class="quer" src="../img/Windkraftwerk1.jpg" />
+        <img class="quer" src="../img/Windkraftwerk2.jpg" />
+      </article>
+    </section>
+    
+    <a class="clean"  href="quellen.html#Erzeugung-Rinnenbo">
+		<button class="Qbutton"> Sources </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>

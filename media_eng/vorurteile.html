@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Formatting Test</title>
+    <link rel="stylesheet" href="../styles/1_BaseRules.css">
+    <link rel="stylesheet" href="../styles/3_layout.css">
+    <link rel="stylesheet" href="../styles/4_banner.css">
+    <link rel="stylesheet" href="../styles/4_button.css">
+</head>
+<body>
+<div class="format-container">
+    <iframe src="nav.html" class="nav_item" scrolling="no"></iframe>
+    <section class="banner" style="background-image: url(../img/banner.png)">
+        <div>
+            <h1>Prejudice</h1>
+        </div>
+    </section>
+    <div class="content_item">
+        <div class="nav-row" id="nav-link">
+            <a href="#H2E">Explosive potential</a>
+            <a href="#EH2">Energy density</a>
+            <a href="#ST">Storage and transport</a>
+            <a href="#GWH2">Efficiency</a>
+            <a href="#ESLK">Affordability</a>
+        </div>
+    
+    
+    
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+    </script>
+        
+        <button id="scrolltotop"><img src="../img/pfeil.png"></button>
+    
+            <script>
+                document.getElementById('scrolltotop').addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+        </script>
+    
+        <br>
+        <br>
+        
+    <section class="articles">
+        <article>
+            <h2 id="H2E">Is hydrogen explosive?</h2>
+            <p>
+                When discussing the explosive nature of hydrogen, the terms <b>“explosive”</b> and <b>“explosive mixture”</b> are often confused. 
+                The following table compares the various properties of hydrogen and methane.
+                <a href="../hff/quellen/vorurteile-quellen.html #H2E-Q" target="_parent" class="annotation">[1]</a>
+                
+                <br>
+                <br>
+                
+            </p>
+            
+                <img src="../img/CH4+H2-Kenngroessen.png" width="85%">
+                <a href="../hff/quellen/vorurteile-quellen.html #H2E-Q" target="_parent" class="annotation">[1]</a>
+            
+                <br> 
+                <br> 
+            
+            <p>
+                
+            </p>
+            
+            <h2 id="EH2">Is the energy density of hydrogen too low?</h2>
+            <p>
+                People often say that hydrogen’s energy density is too low. But is that true?
+                The most common reason for this is the confusion between volumetric and gravimetric energy density.
+                Hydrogen has an energy density of 0.53 kWh per liter at 200 bar. 
+                However, in terms of mass, it has an energy density of <b>33.3 kWh per kilogram</b>. 
+                In comparison, natural gas has an energy density of 2.58 kWh per liter at a pressure of 200 bar and, in terms of mass, an energy density of <b>13.9 kWh per kilogram</b>. 
+                It can be seen that natural gas at 200 bar has nearly 5 times the energy density of hydrogen. 
+                However, this refers to volumetric energy density, not gravimetric energy density. 
+                <b>Hydrogen therefore has a gravimetric energy density nearly 2.5 times higher than that of natural gas</b>.
+                <a href="../hff/quellen/vorurteile-quellen.html #EH2-Q" target="_parent" class="annotation">[2]</a>
+            </p>
+            
+            <br>    
+            
+            <h4>So generally you cannot say hydrogen has a lower energy density!</h4> 
+            
+            <br>
+            <br>
+            <br> 
+            
+            <h2 id="ST">Is hydrogen storable and transportable?</h2>
+            <p>
+                <b>Hydrogen cars by BMW:</b>
+                In 1990, BMW produced its first hydrogen-powered car. 
+                One initial concern regarding the hydrogen tank, which was cooled to -253°C, was that there would be excessive permeation losses. 
+                Permeation losses refer to losses resulting from outgassing. 
+                However, the hydrogen-powered BMW 7 had two key differences from today’s hydrogen cars. 
+                First, it was an internal combustion engine vehicle (ICEV) and therefore had lower efficiency than a fuel cell vehicle (FCV); second (and this is crucial), BMW had opted for liquefied hydrogen. 
+                To this end, an insulated tank was developed that allowed the hydrogen to escape in a controlled manner as pressure built up due to evaporation. 
+                As a result, the tank was nearly empty after a prolonged period of inactivity.
+                This led to the myth that hydrogen cannot be stored long-term. Today, however, H2 is stored in pressure tanks that do not experience any hydrogen losses.
+            </p> 
+            
+            <p>
+                Furthermore, while many other manufacturers are focusing on battery-powered cars, BMW continues to produce hydrogen-powered vehicles.
+                This is because BMW considers fuel cells, such as those in the <b>BMW iX5</b>, as worthwhile. 
+                    
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[3]</a>
+                    
+            </p> 
+            
+                <br>
+                <br>
+            
+            <h3>Storage of hydrogen in a laboratory</h3>
+            <p>
+                Hydrogen must be stored in pressurized gas cylinders in a well-ventilated area. 
+                These gas cylinders must be labeled with safety and warning labels, as hydrogen is a <b>highly flammable gas</b>. 
+                Therefore, electrical systems and equipment in the vicinity must meet certain regulations. 
+                Finally, it is also very important that hydrogen gas tanks are not stored together with other gas tanks.
+                
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[4]</a>
+                
+            </p>
+         
+                <br>
+                <br>
+                
+                <h3>Comparison of storage systems for electricity generated from renewable energy sources (RES) with those using fossil fuels</h3>
+                <img src="../img/Vergleich%20eE%20mit%20fossil%20Tabelle.png" width="85%"> 
+            
+                <br>
+                <br>
+            
+            <h3>100% green hydrogen near Dortmund</h3>
+            <p>
+                Holzwickede is a community near Dortmund that is now being supplied with green hydrogen via a natural gas pipeline.
+                This climate-neutral hydrogen is <b>Quality 3.0, meaning it has a purity of 99.9%</b>. 
+                The pipeline is fed by a hydrogen storage facility, where the green hydrogen is stored at 42 bar. 
+                <b>Westnetz</b> had previously tested adding more than the required 10% hydrogen to natural gas without encountering any problems. 
+                Furthermore, no new issues arose with <b>100% hydrogen as a substitute for natural gas</b>. 
+                So it was clear that the natural gas grid could be filled with <b>100% green hydrogen</b>.  
+                <a href="../hff/quellen/vorurteile-quellen.html #ST-Q" target="_parent" class="annotation">[5]</a>
+                
+                <br>
+                <br>
+            
+            </p>
+            <h2 id="GWH2">Is the efficiency of hydrogen too low?</h2>
+            <p>
+                The overall efficiency of hydrogen is comprised of several efficiency factors: 
+                <a href="../hff/quellen/vorurteile-quellen.html #GWH2-Q" target="_parent" class="annotation">[6]</a>
+                
+                <br>
+                <br>
+                
+                <b>Generation of green energy: ~70%</b> (Efficiency varies depending on the share of each generation source (hydropower, wind power, solar)) 
+                
+                <br>
+                
+                <b>Alkaline elektrolysis: 80%</b>
+                
+                <br>
+                
+                <b>Compression to 1 000 bar: 88%</b> 
+                
+                <br>
+                
+                <b>Transport: 99%</b> 
+                
+                <br>
+                
+                <b>PEM fuel cell: 70%</b>
+                
+                <br>
+            </p>
+                <h3>Overall efficiency: 34%</h3>
+            
+                <br>
+                <br>
+            
+            <p>
+                Comparison: Efficiency of Gasoline:
+                <a href="../hff/quellen/vorurteile-quellen.html #GWH2-Q" target="_parent" class="annotation">[6]</a>
+                
+                <br>
+                
+                <b>Well-To-Tank: 82%</b> (No individual data available ranging from production to the vehicle)
+                
+                <br>
+                
+                <b>Combustion: 18% </b> (real urban traffic)
+                
+                <br>
+    
+            </p>
+                <h3>Overall efficiency: 15%</h3>
+            
+                <br>
+                <br>
+                
+                <h3>For comparison: Nature's efficiency</h3>
+                <img src="../img/Natur%20Effizienz.png" width="85%">
+                <p>
+                    The efficiency of photosynthesis is rather low at about 1%. 
+                    Therefore, it is not useful to consider efficiency alone, as what matters is a systemic view of an energy system. 
+                    Alternatives to physical storage, such as rechargeable batteries, are more efficient, but they lack the required capacity and are unable to meet seasonal storage needs!
+                </p>
+                    
+                <br>
+                <br>
+                <br>
+                <br>
+                    
+                <h3>Hydrogen as an energy source with greater storage capacity</h3>
+                <img src="../img/Power-to-Gas.png" width="85%">
+            
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                <h2 id="ESLK">Is hydrogen technology too expensive??</h2>
+            <p>
+                Over the past few years, the amount of platinum used in PEM fuel cells has been drastically reduced, and a 120 kW fuel cell vehicle (FCV) <b></b> contains just 5 grams more platinum than a gasoline-powered vehicle—though this platinum is recyclable. 
+                Furthermore, hydrogen production is significantly more economical in regions with strong solar radiation <b>(Spain/North Africa)</b> and strong winds <b>(North Sea/Alaska)</b>, and it is expected that as hydrogen technology becomes more widely used, prices will continue to drop.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[7]</a>
+            </p>
+            
+                <br>
+                <br>
+            
+            <h3>Production costs for various types of hydrogen in 2019 and projections for 2030 and 2050</h3>
+            <p class="bigger">
+                Price in ct per kWh H<sub>2</sub>
+            </p>
+            
+                <img src="../img/Elektrolyseure%20Preissturz.png" width="80%">
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[8]</a>
+            
+                <br>
+                <br>
+
+            
+            <h3>Import price of natural gas</h3>
+            <p class="bigger">
+                Monthly development since 2013 in ct per kWh
+            </p>
+                
+                <img src="../img/Grenzuebergangspreis%20Erdgas.png" width="80%">
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[9]</a>
+            
+                <br>
+                <br>
+                <br>
+            
+            <p>
+                The import price per terajoule of natural gas stood at 4,481.73 euros in April 2021. 
+                In just 11 months, this rose by approximately <b>330 percent</b>, or by more than 
+                <br>
+                10,000 euros, to 14,756.39 euros per terajoule of natural gas. 
+                One month later, in April 2022, the price stood at 17,941.65 euros. 
+                This was 21.6 percent higher than the price in March and approximately <b>300 percent</b> higher than the price a year earlier, in April 2021. 
+                Thus, the price per kWh of natural gas in April 2021 was <b>1.6 cents and just one year later, 6.46 cents.</b> 
+                These sharp price fluctuations are due to the instability of the political situation in the producer countries. 
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[10]</a>
+                
+                <br>
+                <br>
+                
+                Predictions for the long term suggest that natural gas will cost between 2 and 6.6 cents per kWh, depending on the scenario. 
+                By comparison, forecasts indicate that the production costs of hydrogen will range from <b>6 to 12 cents per kWh</b>.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[11]</a>
+                <br>
+                In addition, the cost of making the gas grid H2-ready would amount to approximately 
+                <br>
+                45 billion euros over a period of 30 years. 
+                <br>
+                That is 1.5 billion per year, which corresponds to approximately <b>one-quarter of the routine replacement investments made to date</b>. 
+                By comparison, the incremental costs of the REL (Renewable Energy law; in Germany called EEG) amounted to more than 20 billion euros between 2015 and 2020.
+                <a href="../hff/quellen/vorurteile-quellen.html #ESLK-Q" target="_parent" class="annotation">[12]</a>
+            </p>
+        </article>
+    </section>
+    
+    <a class="clean"  href="quellen.html#Erzeugung-Rinnenbo">
+		<button class="Qbutton"> Sources </button>
+	</a>
+    </div>
+    <iframe src="footer.html" class="footer_item" scrolling="no"></iframe>
+</div>
+</body>
+</html>
